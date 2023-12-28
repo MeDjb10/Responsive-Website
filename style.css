@@ -99,7 +99,7 @@ body {
   margin: 14px 0;
 }
 
-.home-span{
+.home-span {
   color: rgb(36, 193, 255);
 }
 
@@ -117,7 +117,6 @@ body {
   margin-right: 7px;
 }
 
-
 .home-links:hover {
   background-color: transparent;
   color: rgb(36, 193, 255);
@@ -126,4 +125,104 @@ body {
 .img-home {
   margin-right: 20px;
   width: 580px;
+}
+
+/* Home banner style end */
+
+/* About Us style*/
+
+.about-us-container {
+  height: 80vh;
+  width: 100%;
+}
+
+.about-us {
+  width: 100%;
+  height: 320px;
+  background-color: rgb(54, 54, 54);
+  margin-top: 140px;
+  position: relative;
+}
+
+.content-about {
+  padding: 10px 36px;
+}
+
+.heading-about {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(255, 129, 57);
+  margin: 10px 0px;
+  margin-bottom: 34px;
+  position: relative;
+}
+
+.heading-about::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 46px;
+  height: 2px;
+  background: rgb(255, 129, 57);
+}
+
+.para-about {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.695);
+  line-height: 24px;
+  margin: 25px 0;
+}
+
+.link-about {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 22px;
+  border: 1px solid rgb(255, 129, 57);
+  color: rgb(255, 129, 57);
+  font-size: 11px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.link-about:hover {
+  color: white;
+}
+
+.span-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgb(255, 129, 57);
+  transition: 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.link-about:hover .span-about  {
+  width: 100%;
+}
+
+.link-about:hover .fa-arrow-right {
+  color: white;
+}
+
+.fa-arrow-right{
+  margin-left: 10px;
+  font-size: 11px;
+  color: rgb(255, 129, 57);
+}
+
+.img-about {
+  position: absolute;
+  top: -36px;
+  right: 20px;
+  width: 50%;
+  height:420px;
+  object-fit: cover;
 }
