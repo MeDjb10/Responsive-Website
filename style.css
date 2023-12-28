@@ -1,50 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
 
-
-
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
 
-
-body{
+body {
   background-color: #232323;
   overflow-x: hidden;
 }
 
-
-.header{
+.header {
   height: 100vh;
   width: 100%;
 }
 
-.navbar{
+.navbar {
   padding: 15px 18px !important;
 }
 
-
-.logo{
+.logo {
   font-weight: 600;
   color: rgba(255, 255, 255, 0.848) !important;
-
 }
 
-.nav-item{
+.nav-item {
   margin: 0 10px;
 }
 
-
-.nav-item .nav-link{
+.nav-item .nav-link {
   color: rgba(255, 255, 255, 0.92);
   font-size: 14px;
   font-weight: 500;
+  position: relative;
 }
 
-.btn-navbar{
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 2px;
+  background: rgb(36, 193, 255);
+  transition: 0.4s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: rgb(36, 193, 255);
+}
+
+.btn-navbar {
   display: inline-block;
   padding: 10px 43px;
   border: 1px solid rgb(36, 193, 255);
@@ -54,7 +67,63 @@ body{
   font-size: 14px;
   font-weight: 600;
   background-color: rgb(36, 193, 255);
-
-
+  transition: 0.2 ease;
 }
 
+.btn-navbar:hover {
+  background-color: transparent;
+  color: rgb(36, 193, 255);
+}
+/* Home banner style */
+
+.content-home2 {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 74px;
+}
+
+.para-home {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.42);
+  max-width: 400px;
+  line-height: 24px;
+  margin: 14px 0;
+}
+
+.home-span{
+  color: rgb(36, 193, 255);
+}
+
+.home-links {
+  display: inline-block;
+  padding: 10px 43px;
+  border: 1px solid rgb(36, 193, 255);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: rgb(36, 193, 255);
+  margin: 20px 0px;
+  margin-right: 7px;
+}
+
+
+.home-links:hover {
+  background-color: transparent;
+  color: rgb(36, 193, 255);
+}
+
+.img-home {
+  margin-right: 20px;
+  width: 580px;
+}
